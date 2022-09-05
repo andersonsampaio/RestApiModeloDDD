@@ -194,6 +194,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "RestApiModeloDDD.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/RestApiModeloDDD.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestApiModeloDDD.Domain.dll": {}
+        }
       }
     }
   },
@@ -520,11 +530,17 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "RestApiModeloDDD.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RestApiModeloDDD.Domain/RestApiModeloDDD.Domain.csproj",
+      "msbuildProject": "../RestApiModeloDDD.Domain/RestApiModeloDDD.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.EntityFrameworkCore >= 6.0.8"
+      "Microsoft.EntityFrameworkCore >= 6.0.8",
+      "RestApiModeloDDD.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -558,7 +574,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dti Digital\\Documents\\GitHub\\MeusProjetos\\RestApiModeloDDD\\RestApiModeloDDD.Domain\\RestApiModeloDDD.Domain.csproj": {
+              "projectPath": "C:\\Users\\dti Digital\\Documents\\GitHub\\MeusProjetos\\RestApiModeloDDD\\RestApiModeloDDD.Domain\\RestApiModeloDDD.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

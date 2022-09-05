@@ -1,6 +1,6 @@
 ﻿namespace RestApiModeloDDD.Domain.Entitys
 {
-    public class Cliente
+    public class Cliente : Base
     {
         public string Nome { get; set; }
         public string Sobrenome { get; set; }

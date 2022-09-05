@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using RestApiModeloDDD.Domain.Entitys;
 
 namespace RestApiModeloDDD.Infrastructure.Data
 {
-    internal class SqlContext
+    public class SqlContext : DbContext
     {
+        protected SqlContext()
+        {
+        }
+
+        public SqlContext(DbContextOptions<SqlContext> options) : base(options) { }
+
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
+
+        public override int SaveChanges()
+        {
+            foreach (var entry in ChangeTracker.Entries().)
+            return base.SaveChanges();
+        }
     }
 }
